@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<employes>
+	<unEmploye>
+		<numEmp>1</numEmp>
+		<Nom>Daviolo</Nom>
+		<Prenom>Nancy</Prenom>
+		<sexe>F</sexe>
+	</unEmploye>
+	<unEmploye>
+		<numEmp>2</numEmp>
+		<Nom>Fuller</Nom>
+		<Prenom>Andrew</Prenom>
+		<sexe>M</sexe>
+	</unEmploye>
+	<unEmploye>
+		<numEmp>3</numEmp>
+		<Nom>Leverling</Nom>
+		<Prenom>Janet</Prenom>
+		<sexe>F</sexe>
+	</unEmploye>
+	<unEmploye>
+		<numEmp>4</numEmp>
+		<Nom>Peacock</Nom>
+		<Prenom>Margaret</Prenom>
+		<sexe>F</sexe>
+	</unEmploye>
+	<unEmploye>
+		<numEmp>5</numEmp>
+		<Nom>Buchanan</Nom>
+		<Prenom>Steven</Prenom>
+		<sexe>M</sexe>
+	</unEmploye>
+	<unEmploye>
+		<numEmp>6</numEmp>
+		<Nom>Suyama</Nom>
+		<Prenom>Michael</Prenom>
+		<sexe>M</sexe>
+	</unEmploye>
+	<unEmploye>
+		<numEmp>7</numEmp>
+		<Nom>King</Nom>
+		<Prenom>Robert</Prenom>
+		<sexe>M</sexe>
+	</unEmploye>
+</employes>	

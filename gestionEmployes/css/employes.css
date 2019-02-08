@@ -1,0 +1,11 @@
+#fenetre{
+	display:none;
+	position:absolute;
+	top : 10%;
+	left:60%;
+}
+
+/* ============ TABLE ============ */
+table{
+border: 1px;
+}

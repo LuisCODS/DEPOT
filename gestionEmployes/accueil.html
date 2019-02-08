@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- CSS-->
+	<link rel="stylesheet" type="text/css" href="css/employes.css" media="all"/>
+    <!-- JQUERY-->
+	<script src="js/jquery-3.3.1.min.js"></script>
+    <!-- JSON-->
+	<script src="donnes/employes.js"></script>
+    <!-- APP - JAVASCRIPT-->
+	<script src="js/employes.js"></script>
+</head>
+<body onLoad="chargerXML();">
+	<h1>Réponse à l’examen en utilisant JSON</h1>
+    <br>
+    <br>
+	<input  type="button" value="Lister Tout" onClick="listerJSON();">
+	<br>
+	<br>	
+	<label for="sexe">Entrer le code sexe:</label>
+	<input type="text" name="sexe" id="sexe">
+	<input  type="button" value="Lister par sexe" onClick="listerParSexe();">
+	<br>
+	<br>
+	<label for="code">Entrer le code employe:</label>
+	<input type="text" name="code" id="code">
+	<input  type="button" value="Rechercher" onClick="listerParcode();">	
+<!-- ======================================================================-->
+	<br>
+    <br>
+	<h1>Réponse à l’examen en utilisant XML</h1>
+	<br>
+    <br>
+	<input type="button" value="Lister tout" onClick="listerXML();">
+	<br>
+	<br>
+	<label for="sexEmploye">Entrer le sexe:</label>
+	<input type="text" name="sexEmploye" id="sexEmploye">
+	<input  type="button" value="Rechercher" onClick="listerParSexeXML();">
+	<br>
+	<br>
+	<label for="rechercher">Entrer le code employe:</label>
+	<input type="text" name="rechercher" id="rechercher">
+	<input  type="button" value="Rechercher" onClick="Rechercher();">
+
+<!--======================================================================-->
+	<div id="fenetre">
+		<span onClick="$('#fenetre').toggle();">X</span>
+		<div id="contenu"></div>
+	</div>
+</body>
+</html>
