@@ -1,0 +1,6 @@
+Exercice3 : (Singleton)
+Créer une base de données unique des comptes bancaires (sous forme de liste).
+Dans cette base de données, on peut :
+-	Ajouter un compte
+-	Supprimer un compte
+-	Modifier un compte

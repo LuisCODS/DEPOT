@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">	 
+</head>
+<body>
+	<!-- =========================  EXERCICE 1 ========================= -->
+	<form name="formName" id="formName">
+		<fieldset>
+			<legend>Tableau de multiplication</legend>
+			<label	for="nombre">Entrez un nombre:</label>
+			<input type="number" 
+					value="Enter" 
+					name="nombre" 
+					id="nombre"
+					placeholder="entre 2 et 20" >
+			<br>
+			<input type="button" value="Enter" onclick="valider(this.form)">
+		</fieldset>
+	</form>
+   <br>
+   <div id="content">
+		 <!-- display table here! -->
+   </div>
+	
+	<!-- =========================  EXERCICE 3 ========================= -->
+   <br>
+   <h4>Choisir une marque de voiture:</h4>
+   <!-- SELECT 1 -->
+   <select name="" id="marque">
+       <option selected disabled>Choisir marque..</option>
+   </select>
+   <br>
+   <br>
+   <!-- SELECT 2 -->
+   <select name="" id="modele" class="invisible"></select>
+   <script src="app.js"></script>
+</body>
+</html>
+
+

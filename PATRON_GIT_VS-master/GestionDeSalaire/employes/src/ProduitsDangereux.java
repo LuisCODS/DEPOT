@@ -1,0 +1,6 @@
+package src;
+public interface ProduitsDangereux {
+
+	final int primeDeRisque = 200;	
+	
+}//fin interface
