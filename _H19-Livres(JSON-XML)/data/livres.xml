@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<listeLivres>
+	<livre>
+		<isbn>123</isbn>
+		<titre>Samba</titre>
+		<pages>500</pages>
+	</livre>
+	<livre>
+		<isbn>456</isbn>
+		<titre>Les russes</titre>
+		<pages>200</pages>
+	</livre>
+	<livre>
+		<isbn>789</isbn>
+		<titre>PHP pour les nuls</titre>
+		<pages>120</pages>
+	</livre>
+	<livre>
+		<isbn>112</isbn>
+		<titre>Web pour les experts</titre>
+		<pages>80</pages>
+	</livre>
+</listeLivres>

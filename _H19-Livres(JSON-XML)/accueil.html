@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <!-- CSS-->
+	<link rel="stylesheet" type="text/css" href="css/livres.css" media="all"/>
+    <!-- JQUERY-->
+	<script src="js/jquery-3.3.1.min.js"></script>
+    <!-- JSON-->
+	<script src="data/livres.js"></script>
+    <!-- APP - JAVASCRIPT-->
+	<script src="js/gestionLivres.js"></script>
+</head>
+<body onLoad="chargerXML();">
+	<h1>Gestion des livres</h1>
+    <br>
+    <br>
+	<h3>Avec JSON</h3><br>
+	<input  type="button" value="Lister JSON" onClick="listerJSON();">
+<!-- ======================================================================-->
+	<br>
+    <h3>Avec XML</h3>
+    <br>
+	<input type="button" value="Lister XML" onClick="listerXML();">
+    <br><br>
+	<h3>Convertion XML to JSON</h3>
+    <br>
+	<input type="button" value="XMLtoJSON" onClick="XMLtoJSON();">
+<!--======================================================================-->
+	<div id="fenetre">
+		<span onClick="$('#fenetre').toggle();">X</span>
+		<div id="contenu"></div>
+	</div>
+</body>
+</html>
