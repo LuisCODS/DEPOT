@@ -1,0 +1,38 @@
+﻿body {
+    padding-top: 50px;
+    padding-: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}bottom
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/*============================MY STYLE===============================*/
+.imageSalade {
+    margin:15px;
+}
+
+h1{
+    color:blue;
+    text-align:center;
+}
+
+
+/*.prix {
+    margin: 15px;
+}*/
+
+/*.divToFormName {
+    width: 400px;
+    height: 400px;
+    background-color: #F0FFFF";
+}*/

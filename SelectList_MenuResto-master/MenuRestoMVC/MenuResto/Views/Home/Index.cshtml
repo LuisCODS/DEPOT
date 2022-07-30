@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Revision</title>
+    <script type="text/javascript" src="~/Js/DocScript.js"></script>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+</head>
+<body onload="initializeListe();">
+
+    <h1>Menu Restaurant <br> Aux Délices du Bérsil</h1>
+    <div style="background-color:white; width: 400px; height: 300px; margin-top:50px;">
+        <form name="formName" id="formName">
+            Entrée:
+            <select id="listOfSalade" name="listOfSalade"
+                    onchange="changeImage(this.form)">
+            </select>
+
+            <IMG class="imageSalade" NAME="imageSalade" id="imageSalade"
+                 SRC="~/Img/imgDefault.jpg"
+                 alt="logo img salade"
+                 HEIGHT=128 WIDTH=128 BORDER="0" />
+            <br />
+            <span  id="sousTotal"></span><br />
+            <span  id="taxes"></span><br />
+            <span  id="total"></span>
+        </form>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+@*=========================listOfRepas===========================*@
+@*Repas:
+    <select id="listOfRepas" name="listOfRepas"
+            onchange="changeImage(this.form)"></select>
+
+    <IMG NAME="imageRepas" id="imageRepas" SRC="~/Img/default.jpg"
+         alt="logo img Repas" HEIGHT=128 WIDTH=128 BORDER="0" />
+
+    <span id="PrixRepas"></span>*@
+
