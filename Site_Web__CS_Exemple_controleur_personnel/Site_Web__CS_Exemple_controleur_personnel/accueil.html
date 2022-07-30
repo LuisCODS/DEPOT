@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>site2</title>
+    <script type="text/javascript" src="valider.js"></script>
+    <link rel="stylesheet" type="text/css" href="monStyle.css" />
+</head>
+<body>
+    <a href="#" onclick="document.getElementById('divFilm').style.visibility='visible'">Enregistrer film</a><br /><br />
+    <a href="#" onclick="lister()">Lister les films</a><br /><br />
+    <a href="#" onclick="document.getElementById('divModFilm').style.visibility='visible'">Modifier un film</a><br /><br />
+
+    <!-- FORMULAIRE POUR ENREGISTRER -->
+    <div id="divFilm" style="visibility:hidden;position:absolute;top:20%;left:40%">
+        <form name="formFilm" action="gestionMembres.aspx" method="post">
+            Numéro : <input id="num" name="num" type="text" /><br />
+            Titre : <input id="titre" name="titre" type="text" /><br />
+            Durée : <input id="duree" name="duree" type="text" /><br />
+            Réalisateur : <input id="res" name="res" type="text" /><br />
+            <input type="hidden" name="action" value="Enregistrer" /> <!--ROUTAGE-->
+            <input type="button" value="Enregistrer" onclick="valider()" />
+            <input type="button" value="Cacher" onclick="document.getElementById('divFilm').style.visibility='hidden'" />
+        </form>
+    </div>
+
+    <!-- FORMULAIRE POUR LISTER -->
+    <form name="formLister" action="gestionMembres.aspx" method="post">
+        <input type="hidden" name="action" value="Lister" /><!--ROUTAGE-->
+    </form>
+
+    <!-- FORMULAIRE POUR MODIFIER -->
+    <div id="divModFilm" style="visibility:hidden;position:absolute;top:20%;left:40%">
+        <form name="formModifier" action="gestionMembres.aspx" method="post">
+            Pour quel numéro ? : <input id="numf" name="numf" type="text" /><br />
+            <input type="hidden" name="action" value="Modifier" /> <!--ROUTAGE-->
+            <input type="button" value="Chercher" onclick="modifier()" />
+            <input type="button" value="Annuler" onclick="document.getElementById('divModFilm').style.visibility='hidden'" />
+            <input type="hidden" name="code" value="Chercher" />
+        </form>
+    </div>
+</body>
+</html>
