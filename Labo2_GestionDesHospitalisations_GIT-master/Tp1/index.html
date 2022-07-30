@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hospital</title>
+<meta charset="utf-8">
+<!--My own javascript-->
+<script type="text/javascript" src="js/hospitalisations.js"></script>	
+   <!--BOOTSTRAP CSS-->	  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	  
+<!--My own CSS-->
+<link href="css/style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body onload="initialize();"> 
+	 <div class="container">   
+	 
+		<!-- =============== ZONA MENU ===============-->
+		<div class="row">
+			<div class="col-xl-12" id="ligMenu">
+				<ul class="nav  nav-pills">
+					<div class="navbar-header">
+						  <a class="navbar-brand" href="#" onclick="hiddenDiv()">HopitalCare.com</a>
+					</div>	
+						  <li class="nav-item"><a href="#" onclick="hiddenDiv()"> Home</a></li>
+						  <li class="nav-item"><a href="#" onclick="showPatients()">Patients</a></li>
+						  <li class="nav-item"><a href="#" onclick="showEtablissements()">Établissements</a></li>
+						  <li class="nav-item"><a href="#" onclick="showHospitalisations()">Hospitalisations</a></li>
+						  <li class="nav-item"><a href="#" onclick="chargerDossier()">Hospitalisation par patient</a></li>
+						  <li class="nav-item"><a href="#" onclick="chargerEtablissiment()">Hospitalisation par etablissement ou spécialité</a></li>
+				 </ul>			  
+			</div>	
+		</div>
+		
+		<!-- =============== ZONE D'AFFICHAGE ===============-->
+		<div class="row">			
+			<!-- <div class="col-xl-12" id="imageBack" >  -->
+				<!-- <img src="img/corridor-hospital.jpg"> -->
+			<!-- </div> -->
+			  <div class="col-xl-4" id="divColAfficheLeft" >  
+				<br>
+					<h5 class="text-info" id="tag_p_Title" style="visibility:hidden">
+						Selectionner le numero d'etablissement:					
+					</h5>					
+					<select class="form-control" id="selectByDossier" 
+							onChange="showTableHospByPatient(this)">
+					</select>	
+					<br>
+					<select class="form-control" id="selectByEtablissement" 
+							onChange="chargerSpecialite(this)" 
+							style="visibility:hidden">
+					</select>
+					<br><br>
+					<select class="form-control" id="specialite"
+							style="visibility:hidden"
+							onChange="showTableBySpecialite(this)">
+					</select>
+			  </div>
+			  <div class="col-xl-8" id="divColAffiche" >
+						<!--RendePage zone -->										
+			  </div>			
+		</div>		  
+		<!-- =============== ZONA STATUS ===============-->
+		<div class="row">            
+			<div class="col-sm-12" id="footer"> 
+				<div class="alert"  id="msn-Alert" style="visibility: hidden">
+				  <!-- <button type="button" class="close" data-dismiss="alert" > -->
+					<!-- X  -->
+				  <!-- </button> -->
+					<h3>
+						<strong>Dommage! </strong> Il n'y a aucun patient pour l'hopital en question.
+					</h3>
+				 </div>
+			</div>
+		</div>         
+	</div>
+</body>
+</html>
+
+

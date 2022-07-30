@@ -1,0 +1,72 @@
+
+/* ============ GLOBAL ============ */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ============ DIVs ============ */
+.row{
+	width: 1200px;
+}
+/* #imageBack{ */
+	   /* width:200px; */
+	   /* height:200px; */
+/* } */
+
+#ligMenu{
+	 background-color: #D2B48C;	 
+}
+div.container{
+    width: 1200px;
+    height: 800px; 
+	border: 1px solid #EAEDED; 	 
+}
+
+div{
+	/*Important!*/
+   box-sizing: border-box;
+}
+
+#divColAfficheLeft{
+	float:left;
+	visibility:hidden;
+	width: 250px;
+	height: 650px;
+	/* background-color: yellow; */
+}
+
+#divColAffiche{
+	width: 900px;
+	height: 650px;
+	float:right;	
+}
+
+#footer{
+	height: 100px;
+	background-color: #BFC9CA;
+	text-align: center;
+	color: red;
+}
+
+/* ============ TABLE ============ */
+.table { 
+	margin-top:20px;
+	width: 750px;
+	/* background-color: floralwhite; */
+	/* font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; */
+}
+table td, table th {
+  border: 1px solid #ddd;
+  /* padding: 8px; */
+}
+table tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+
+table tr:hover {
+	/*link active color*/
+	background-color: #ddd;
+}
+
+
+
