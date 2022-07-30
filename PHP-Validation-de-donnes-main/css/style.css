@@ -1,0 +1,10 @@
+.container{
+    /* background-color: azure; */
+	 border: 1px solid red;
+	 width:1000px;
+	 height:800px;
+	 box-sizing:border-box;
+	 text-align:center;
+	 color:red;
+
+}
