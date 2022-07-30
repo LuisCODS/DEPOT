@@ -1,0 +1,69 @@
+/* must be the first element in the style sheet*/
+@charset "UTF-8";
+
+/*font externe*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto&display=swap');
+
+/*____________________ GLOBAL _____________________________*/
+
+/*Reset*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    font-family: 'Roboto', Verdana, Geneva, sans-serif;
+    font-size: 14px;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+/* _____________  HERO ______________ */
+
+.owl-carousel .item img {
+    height: 500px;
+    object-fit: cover;
+    /*contain: S'ajuste respectant le limite de l'image*/
+}
+
+/* _____________  CARDS ______________ */
+
+.card-img-top {
+    object-fit: cover;
+}
+
+/*________________  CONTENT ________________*/
+
+
+/*________________  FOOTER ________________*/
+
+.footer {
+    height: 200px;
+    background-color: #0000008a;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+/*Centre tous les elements
+.center_element {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+*/
