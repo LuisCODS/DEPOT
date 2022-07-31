@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<style>
+			*{
+				color: #000;
+				background-color: #fff;
+				font-family: "Arial", "Helvetica", "Roboto", "Verdana", "Open Sans", sans-serif;
+				line-height: 1.1;
+			}
+			table, tr, th, td{
+				padding: 7px;
+				border: 0;
+				vertical-align:top;
+				text-align:left;
+				/*table-collapse: collapse;*/
+			}
+			table{
+			    width: 100%;
+			}
+			th{
+				padding: 11px 7px 9px 7px;
+				text-align:left	;
+				color: #ED202A;
+				border-bottom: 2px solid #ED202A;
+			}
+			.bold{
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Nouvelle critique de client pour votre succursale.</h2>
+		<p>Un sondage envoyé suite à un service de toilettage a été répondu par un client de votre succursale. Les informations ci-dessous représentent le client et son appréciation.</p>
+		<table>
+		    <!-- ================================= Informations sur le client  ================================ -->
+			<tr>
+				<th colspan="2">
+					Informations sur le client
+				</th>
+			</tr>
+			<tr>
+				<td style="width:300px;" class="bold">
+					Nom
+				</td>
+				<td>
+					%%CLIENT%%
+				</td>
+			</tr>
+			<tr>
+				<td class="bold">
+					Adresse courriel
+				</td>
+				<td>
+					%%EMAIL%%
+				</td>
+			</tr>
+			<tr>
+				<td class="bold">
+					Téléphone de contact
+				</td>
+				<td>
+					%%TEL_1%%<br>
+					%%TEL_2%%
+				</td>
+			</tr>
+			<!-- ================================= Informations du service ================================ -->
+			<tr>
+				<th colspan="2">
+					Informations sur le service
+				</th>
+			</tr>
+			<tr>
+				<td class="bold">
+					Animal toiletté
+				</td>
+				<td>
+					%%A_NOM%%
+				</td>
+			</tr>
+			<tr>
+				<td class="bold">
+					Type de service
+				</td>
+				<td>
+					%%SERVICE%%
+				</td>
+			</tr>
+			<tr>
+				<td class="bold">
+					Date du toilettage
+				</td>
+				<td>
+					%%DATE_T%%
+				</td>
+			</tr>
+			<tr>
+				<td class="bold">
+					Toiletteur attitré
+				</td>
+				<td>
+					%%TOILETTEUR%%
+				</td>
+			</tr>
+			<!-- ================================= QUESTIONS & RÉPONSES================================ -->
+			<tr>
+				<th colspan="2">
+				    Réponses au sondage
+			    </th>
+			</tr>
+			<tr>
+				<td class="bold">
+				    %%QUESTION_7%% <span style="font-size: 20px;">%%EMOJI_7%%</span>
+			    </td>
+				<td>
+				    %%REPONSE_7%%
+			    </td>
+			</tr>
+			<tr>
+				<td class="bold">
+				    %%QUESTION_8%% <span style="font-size: 20px;">%%EMOJI_8%%</span>
+			    </td>
+				<td>
+				    %%REPONSE_8%%
+			    </td>
+			</tr>
+			<tr>
+				<td class="bold">
+				    %%QUESTION_9%% <span style="font-size: 20px;">%%EMOJI_9%%</span>
+			    </td>
+				<td>
+				    %%REPONSE_9%%
+			    </td>
+			</tr>
+			<tr>
+				<td class="bold">
+				    %%QUESTION_10%%
+			    </td>
+				<td>
+				    %%REPONSE_10%%
+			    </td>
+			</tr>
+			<tr>
+				<td class="bold">
+				    %%QUESTION_12%%
+			    </td>
+				<td>
+				    %%REPONSE_12%%
+			    </td>
+			</tr>
+			<!-- ================================= Détails techniques ================================ -->
+			<tr>
+				<th colspan="2">
+					Détails techniques
+				</th>
+			</tr>
+			<tr>
+				<td class="bold">
+					Adresse IP de l'expéditeur
+				</td>
+				<td>
+					%%IP%%
+				</td>
+			</tr>
+			<tr>
+				<td class="bold">
+					Agent utilisateur de l'expéditeur
+				</td>
+				<td>
+					%%UA%%
+				</td>
+			</tr>
+			<tr>
+				<td class="bold">
+					Date d'envoi
+				</td>
+				<td>
+					%%DATE_S%%
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
