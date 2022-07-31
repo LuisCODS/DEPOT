@@ -1,0 +1,18 @@
+
+.flex-container {
+  display: inline-block;
+}
+
+/* so o primeiro filho vai ser aplicado */
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 12px;
+}
+
+form{
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}

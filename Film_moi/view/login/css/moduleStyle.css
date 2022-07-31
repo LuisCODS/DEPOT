@@ -1,0 +1,21 @@
+/*html, body{	  
+	height: 100%; /* occupe tout le espace en haut et en bas de l'ecrant*/  
+}
+
+body{    
+    display: flex;
+    align-items: center;
+    background-color:#f5f5f5;
+}
+
+form{
+    width: 50%;
+    max-width: 330px;
+    margin: auto;
+}
+
+
+.iconeBlog{
+   font-size: 150px;
+    margin: auto;
+}
