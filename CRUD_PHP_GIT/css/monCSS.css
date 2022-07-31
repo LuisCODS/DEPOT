@@ -1,0 +1,10 @@
+#idForm, #idEnlever, #idModifier{
+	display:none;
+	position:absolute;
+	top:20%;
+	left:35%;
+}
+span{
+	font-size:14px;
+	color:red;
+}
